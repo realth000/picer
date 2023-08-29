@@ -7,11 +7,10 @@ mod config {
 mod application;
 mod window;
 
-use gettextrs::{gettext, LocaleCategory};
-use gtk::{gio, glib};
-
 use self::application::ExampleApplication;
 use self::config::{GETTEXT_PACKAGE, LOCALEDIR, RESOURCES_FILE};
+use gettextrs::{gettext, LocaleCategory};
+use gtk::{gio, glib};
 
 fn main() -> glib::ExitCode {
     // Initialize logger

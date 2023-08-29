@@ -10,3 +10,4 @@
 /vendor
 /.vscode
 /.idea
+/.cargo/config
