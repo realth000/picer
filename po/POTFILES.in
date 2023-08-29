@@ -1,0 +1,6 @@
+data/kzs.th000.picer.desktop.in.in
+data/kzs.th000.picer.gschema.xml.in
+data/kzs.th000.picer.metainfo.xml.in.in
+data/resources/ui/shortcuts.ui
+data/resources/ui/window.ui
+src/application.rs
