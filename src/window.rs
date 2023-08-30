@@ -33,6 +33,10 @@ mod imp {
 
         fn class_init(klass: &mut Self::Class) {
             klass.bind_template();
+
+            klass.install_action("win.increment", None, move |win, _, _| {
+                println!("trigger win.increment");
+            })
         }
 
         // You must call `Widget`'s `init_template()` within `instance_init()`.

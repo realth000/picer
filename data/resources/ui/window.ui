@@ -29,12 +29,31 @@
         </child>
       </object>
     </child>
+    <!-- https://gitlab.gnome.org/World/Authenticator/-/blob/master/data/resources/ui/window.ui -->
     <child>
-      <object class="GtkLabel" id="label">
-        <property name="label" translatable="yes">Hello world!</property>
-        <style>
-          <class name="title-header"/>
-        </style>
+      <object class="GtkBox">
+        <property name="halign">center</property>
+        <property name="valign">center</property>
+        <property name="margin-top">24</property>
+        <property name="hexpand">True</property>
+        <property name="vexpand">True</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkLabel" id="label">
+            <property name="label" translatable="yes">Hello world!</property>
+            <property name="halign">center</property>
+            <style>
+              <class name="title-header" />
+            </style>
+          </object>
+        </child>
+        <child>
+          <object class="GtkButton" id="countButton">
+            <property name="margin-top">12</property>
+            <property name="label" translatable="yes">_Add</property>
+            <property name="action-name">win.increment</property>
+          </object>
+        </child>
       </object>
     </child>
   </template>
